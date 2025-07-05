@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CDN Fonts-->
+    <link
+      href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
+      rel="stylesheet"
+    />
+    <!--My Styles-->
+    <link rel="stylesheet" href="./style.css" />
+    <title>🏉 Rugby Match Scoreboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <p id="lead-message">Home is in the lead!</p>
+      <img
+        id="rugby-scrum-img"
+        src="./rugby-scrum.jpg"
+        alt="Rugby scrum - two opposing teams about to engage in a fight for the ball"
+      />
+      <div class="home">
+        <h1 class="team-header">Home</h1>
+        <p class="score-home">0</p>
+        <div class="increment-buttons">
+          <button class="add-1" onclick="incrementHomeScore(2)">+2</button>
+          <button class="add-2" onclick="incrementHomeScore(3)">+3</button>
+          <button class="add-3" onclick="incrementHomeScore(5)">+5</button>
+        </div>
+      </div>
+      <div class="timer-container">
+        <h3>Timer</h3>
+        <span id="timer-display">40:00</span>
+        <button id="start-timer" onclick="startTimer()">Start</button>
+        <button id="pause-timer" onclick="pauseTimer()">Pause</button>
+        <button id="reset-timer" onclick="resetTimer()">Reset</button>
+        <button id="new-game" onclick="newGame()">New Game</button>
+      </div>
+      <div class="guest">
+        <h1 class="team-header">Guest</h1>
+        <p class="score-guest">0</p>
+        <div class="increment-buttons">
+          <button class="add-1" onclick="incrementGuestScore(2)">+2</button>
+          <button class="add-2" onclick="incrementGuestScore(3)">+3</button>
+          <button class="add-3" onclick="incrementGuestScore(5)">+5</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

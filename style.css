@@ -1,0 +1,164 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cursed Timer ULiL", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100vh;
+}
+
+button {
+  border-radius: 0;
+  text-align: inherit;
+  background: none;
+  box-shadow: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: none;
+  color: inherit;
+  font: inherit;
+  border: 2px solid #9aabd8;
+  border-radius: 5px;
+  transition: transform 200ms ease-in-out;
+}
+
+button:hover {
+  background-color: #f94f6d;
+  transform: scale(1.1);
+}
+
+.container {
+  display: flex;
+  background-color: #1b244a;
+  /*Set a box shadow*/
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 1);
+  border-radius: 1rem;
+  gap: 6.25rem;
+  align-items: center;
+  justify-content: center;
+  margin: 8rem auto;
+  width: 80%;
+  padding: 2rem;
+  border: 1px solid #eeeeee;
+}
+
+#rugby-scrum-img {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.home,
+.guest {
+  display: flex;
+  flex-direction: column;
+  color: #eeeeee;
+  gap: 1rem;
+}
+
+.team-header {
+  font-family: Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 2.5rem;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.score-home,
+.score-guest {
+  font-size: 5.6rem;
+  width: 155px;
+  height: 120px;
+  border-radius: 5px;
+  background-color: #080001;
+  color: #f94f6d;
+  text-align: center;
+  padding: 1rem;
+}
+
+.add-1,
+.add-2,
+.add-3 {
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+}
+
+.add-1:hover,
+.add-2:hover,
+.add-3:hover {
+  background-color: #f94f6d;
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem 0.5rem;
+}
+
+.timer-container h3 {
+  font-family: Verdana, sans-serif;
+  text-transform: uppercase;
+}
+
+#lead-message {
+  display: none;
+  position: fixed;
+  top: 5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  background-color: rgba(8, 0, 1, 0.6);
+  font-family: Verdana, sans-serif;
+  color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem #000a;
+  z-index: 100;
+  text-align: center;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+#lead-message.show {
+  display: block;
+  opacity: 1;
+}
+
+#timer-display {
+  background-color: black;
+  width: 100px;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+#new-game {
+  position: absolute;
+  bottom: 14rem;
+  background-color: #1b244a;
+  text-shadow: 1px 1px 0.2px black;
+  padding: 0.3rem 1.8rem;
+}
+
+#new-game:hover {
+  background-color: #f94f6d;
+  color: white;
+}
