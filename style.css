@@ -162,3 +162,39 @@ button:hover {
   background-color: #f94f6d;
   color: white;
 }
+
+@media (max-width: 970px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    background-color: #0a0c12ff;
+    position: relative;
+  }
+  .container {
+    flex-direction: column;
+    width: 80%;
+    gap: 2rem;
+    background-image: url("./rubgy-scrum-2.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .home,
+  .guest {
+    align-items: center;
+  }
+
+  #rugby-scrum-img {
+    display: none;
+  }
+
+  #new-game {
+    bottom: 2rem;
+    position: absolute;
+    left: 13.4rem;
+    bottom: 0;
+    transform: translateX(-50%);
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+  }
+}
